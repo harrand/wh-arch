@@ -9,7 +9,7 @@ jobs:
     - name: "Download WowHead"
       run:  |
         sudo apt-get install wget
-        wget -rpEk --limit=2 https://www.wowhead.com
+        wget -rpEk --limit=2 --timeout=120 https://www.wowhead.com
     - name: "Upload Artifact"
       uses: actions/upload-artifact@v3
       with:
