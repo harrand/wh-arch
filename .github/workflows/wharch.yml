@@ -9,9 +9,9 @@ jobs:
     - name: "Download WowHead"
       run:  |
         sudo apt-get install wget
-        wget https://www.wowhead.com/ptr
+        wget -mpEk https://www.wowhead.com/ptr
     - name: "Upload Artifact"
       uses: actions/upload-artifact@v3
       with:
         name: wowhead_ptr
-        path: ptr/
+        path: ./
