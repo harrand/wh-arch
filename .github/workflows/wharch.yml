@@ -5,13 +5,14 @@ on:
 jobs:
   dl_wowhead:
     runs-on: ubuntu-latest
-    continue-on-error: true
     steps:
     - name: "Download WowHead"
+      continue-on-error: true
       run:  |
         sudo apt-get install wget
         timeout 120 wget -mpEk https://www.wowhead.com
     - name: "Upload Artifact"
+      if: always()
       uses: actions/upload-artifact@v3
       with:
         name: wowhead_ptr
