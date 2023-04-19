@@ -17,8 +17,8 @@ jobs:
       with:
         name: wowhead_retail
         path: |
-          ./**/[a-zA-Z0-9+].css
-          ./**/[a-zA-Z0-9+].html
-          ./**/[a-zA-Z0-9+].js
-          ./**/[a-zA-Z0-9+].jpg
-          ./**/[a-zA-Z0-9+].png
+          **/www.wowhead.com/**/[a-zA-Z0-9+].css
+          **/www.wowhead.com/**/[a-zA-Z0-9+].html
+          **/www.wowhead.com/**/[a-zA-Z0-9+].js
+          **/www.wowhead.com/**/[a-zA-Z0-9+].jpg
+          **/www.wowhead.com/**/[a-zA-Z0-9+].png
