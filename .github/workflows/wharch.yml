@@ -9,7 +9,7 @@ jobs:
     - name: "Download WowHead"
       run:  |
         sudo apt-get install wget
-        wget -pEk https://www.wowhead.com/ptr
+        wget -rpEk -l 3 https://www.wowhead.com
     - name: "Upload Artifact"
       uses: actions/upload-artifact@v3
       with:
