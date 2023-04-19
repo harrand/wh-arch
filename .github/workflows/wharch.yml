@@ -10,7 +10,7 @@ jobs:
       continue-on-error: true
       run:  |
         sudo apt-get install wget
-        timeout 120 wget -mpEk https://www.wowhead.com
+        timeout 120 wget -mpEk https://www.wowhead.com/news
     - name: "Upload Artifact"
       if: always()
       uses: actions/upload-artifact@v3
